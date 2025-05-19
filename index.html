@@ -55,7 +55,9 @@
                 <li><a href="#">Ang</a></li>
               </ul>
             </li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html " class="bg-white text-black rounded-3 py-1 px-3">
+              <i class="bi bi-chat-dots mx-2 " style="font-size: 20px"></i>
+              Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -86,62 +88,54 @@
           </div>
         </div>
       </div>
-
     </section>
 
-
     <!-- Featured Services Section -->
-    <section id="featured-services" class="featured-services section">
+    <section id="featured-services" class="featured-services section py-5" style="padding: 50px 0px">
       <div class="container">
-        <div class="row gy-4">
+        <div class="row  gy-4">
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-activity icon"></i></div>
-              <h4><a href="" class="stretched-link">
-                Optimisation
-              </a></h4>
-              <p>
+            <div class="service-item rounded-4  position-relative">
+              <div class="mx-auto  text-center container-fluid w-100 justify-content-center" style="min-height: 140px">
+                <img src="./assets/icon/chronometre-removebg-preview.png" class="img-fluid" alt="image" width="150" height="150">
+              </div>
+              <p class="text-center" style="font-size: 24px">
                 Optimiser la
                 productivité et
                 économiser du temps
               </p>
             </div>
           </div><!-- End Service Item -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
-              <h4><a href="" class="stretched-link">
-                Communication
-              </a></h4>
-              <p>
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item rounded-4  position-relative">
+              <div class="mx-auto  text-center container-fluid w-100 justify-content-center" style="min-height: 140px">
+                <img src="./assets/icon/users-network-removebg-preview.png" class="img-fluid" alt="image" width="150" height="150">
+              </div>
+              <p class="text-center" style="font-size: 24px">
                 Favoriser la
                 communication entre
                 les différents acteurs
               </p>
             </div>
           </div><!-- End Service Item -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
-              <h4><a href="" class="stretched-link">Reduction</a></h4>
-              <p>
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item rounded-4  position-relative">
+              <div class="mx-auto  text-center container-fluid w-100 justify-content-center" style="min-height: 140px">
+                <img src="./assets/icon/reduction-removebg-preview.png" class="img-fluid" alt="image" width="150" height="150">
+              </div>
+              <p class="text-center" style="font-size: 24px">
                 Réduction des erreurs,
                 des retards et des
                 couts
-
               </p>
             </div>
           </div><!-- End Service Item -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-graph-up-arrow"></i></div>
-              <h4><a href="" class="stretched-link">
-                Maximisation
-              </a></h4>
-              <p style="min-width: 250px">
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item rounded-4  position-relative">
+              <div class="mx-auto  text-center container-fluid w-100 justify-content-center " style="min-height: 140px">
+                <img src="./assets/icon/maximisation-removebg-preview.png" class="img-fluid" alt="image" width="150" height="150">
+              </div>
+              <p class="text-center" style="font-size: 24px">
                 Maximiser les profits
               </p>
             </div>
@@ -160,15 +154,55 @@
             background-size: cover;
             background-repeat: no-repeat;"
             class="team section light-background">
-      <div class="container">
+      <style>
+        .team-member {
+          position: relative;
+          overflow: hidden;
+          cursor: pointer;
+        }
+
+        .member-img {
+          position: relative;
+        }
+
+        .member-img img {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+
+        /* Overlay qui couvre toute l’image */
+        .member-info {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.6); /* noir semi-transparent */
+          color: white;
+          display: flex;
+          justify-content: center; /* centrer horizontalement */
+          align-items: center;     /* centrer verticalement */
+          opacity: 0;
+          transition: opacity 0.3s ease;
+        }
+
+        /* Afficher l’overlay au hover sur la carte */
+        .team-member:hover .member-info {
+          opacity: 1;
+        }
+
+      </style>
+
+      <div class="container py-5">
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4 col-md-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member">
-              <div   class="member-img">
-                <img src="assets/img/Home-page/1%20stratégie%20BIM.jpg" style="min-height: 625px" class="img-fluid" alt="">
-              </div>
-              <div class="member-info">
-                <h4 class="">Stratégie BIM</h4>
+              <div class="member-img">
+                <img src="assets/img/Home-page/1%20stratégie%20BIM.jpg" class="img-fluid" style="min-height:625px" alt="">
+                <div class="member-info">
+                  <h4 class="text-white">Stratégie BIM</h4>
+                </div>
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -178,7 +212,7 @@
                 <img src="assets/img/Home-page/2%20AMO%20BIM.jpg" style="min-height: 625px" class="img-fluid" alt="">
               </div>
               <div class="member-info">
-                <h4 class="">AMO BIM</h4>
+                <h4 class="text-white">AMO BIM</h4>
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -188,7 +222,7 @@
                 <img src="assets/img/Home-page/3%20BIM%20management.jpg" style="min-height: 625px" class="img-fluid" alt="">
               </div>
               <div class="member-info">
-                <h4 class="">BIM Management</h4>
+                <h4  class="text-white">BIM Management</h4>
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -198,7 +232,7 @@
                 <img src="assets/img/Home-page/4%20Coordination%203D.jpg"  style="min-height: 625px" class="img-fluid" alt="">
               </div>
               <div class="member-info">
-                <h4 class="">Coordination 3D</h4>
+                <h4  class="text-white">Coordination 3D</h4>
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -208,7 +242,7 @@
                 <img src="assets/img/Home-page/5%20Exploitation.jpg"  style="min-height: 625px" class="img-fluid" alt="">
               </div>
               <div class="member-info">
-                <h4 class="">Exploitation & Maintenance</h4>
+                <h4  class="text-white">Exploitation & Maintenance</h4>
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -218,7 +252,7 @@
                 <img src="assets/img/Home-page/6%20Formation.jpg"  style="min-height: 625px" class="img-fluid" alt="">
               </div>
               <div class="member-info">
-                <h4 class="">Formation</h4>
+                <h4  class="text-white">Formation</h4>
               </div>
             </div>
           </div><!-- End Team Member -->

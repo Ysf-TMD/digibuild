@@ -879,31 +879,38 @@ section,
 # Featured Services Section
 --------------------------------------------------------------*/
 .featured-services .service-item {
-  background-color: var(--surface-color);
+  background-image: linear-gradient(to  top, #17286d, #4745f7) !important;
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   padding: 50px 30px;
+  color:white;
   transition: all 0.3s ease-in-out;
   height: 100%;
   position: relative;
   z-index: 1;
 }
-
+/*
 .featured-services .service-item:before {
   content: "";
   position: absolute;
-  background: var(--accent-color);
+  background: #17286d;
   inset: 100% 0 0 0;
   transition: all 0.3s;
+  border-radius: 19px;
   z-index: -1;
 }
-
+*/
 .featured-services .service-item .icon {
   margin-bottom: 10px;
 }
+@media (max-width: 640px) {
+  .featured-services .service-item {
+    min-width: 460px;
+  }
+}
 
 .featured-services .service-item .icon i {
-  color: var(--accent-color);
-  font-size: 36px;
+  color: white;
+  font-size: 46px;
   transition: ease-in-out 0.3s;
 }
 
@@ -914,7 +921,7 @@ section,
 }
 
 .featured-services .service-item h4 a {
-  color: var(--heading-color);
+  color: white ;
   transition: ease-in-out 0.3s;
 }
 
@@ -922,6 +929,7 @@ section,
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+  color:white;
   transition: ease-in-out 0.3s;
 }
 
@@ -932,9 +940,9 @@ section,
 }
 
 .featured-services .service-item:hover:before {
-  background-image: linear-gradient(to left top, #17286d, #4745f7) !important;
+  background-image: white;
   inset: 0;
-  border-radius: 0px;
+  border-radius: 19px;
 }
 
 /*--------------------------------------------------------------
@@ -1123,10 +1131,11 @@ section,
 }
 
 .services .service-item h3 {
-  font-weight: 700;
+  /*font-weight: 700;*/
   margin: 10px 0 15px 0;
-  font-size: 22px;
+  font-size: 26px;
   transition: 0.3s;
+  color:#131070;
 }
 
 .services .service-item p {
@@ -1378,6 +1387,9 @@ section,
 .team .team-member .member-img {
   position: relative;
   overflow: hidden;
+  max-width: 360px;
+  max-height: 350px;
+
 }
 
 .team .team-member .social {
@@ -1877,7 +1889,7 @@ section,
 
 
 
-/*--------- custom style ---------------*/
+/*--------- custom style ---------------
 .member-info h4{
   color:#131070 !important;
-}
+}*/
